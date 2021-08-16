@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">;
+     // For pada Array
+     var nama = ['aisdams *', 'brayn *', 'dorty *', 'yuth *', 'boy *'];
+     for( var i = 0; i < nama.length; i++ ) {
+       document.write(nama.join(" * "))[i];
+     }
+
+     //Foreach 
+     nama.forEach(function(e, i) {
+       document.write('Absent Siswa ke-' + (i+1) + ' adalah : ' + e);
+     })
+    </script>
+    
+</body>
+</html>
