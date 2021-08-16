@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="clik()">Clik</button>
+    <p id="result"></p>
+    <script type="text/javascript">;
+        // 1. Metode toString
+        var jus = ["melon","mangga","appel"]
+        document.write(jus.toString())
+        // 2. Metode join
+        var jus = ["melon","mangga","appel"]
+        document.write(jus.join(" + "))
+        // 3. Metode push
+        var hewan = ["Gajah","Harimau","Monyet","Koala"];
+        document.getElementById("result").innerHTML = hewan;
+        function clik() {
+            hewan.push("Kucing");
+            document.getElementById("result").innerHTML = hewan;
+        }
+        // 4. Metode pop
+        var hewan = ["Gajah","Harimau","Monyet","Koala"];
+        document.getElementById("result").innerHTML = hewan;
+        function clik() {
+            hewan.pop();
+            document.getElementById("result").innerHTML = hewan;
+        }
+        // 5. Metode shift
+        var bangundatar = ["kubus","balok","persegi","lingkaran"];
+        document.getElementById("result").innerHTML = bangundatar;
+        function clik() {
+            bangundatar.shift();
+            document.getElementById("result").innerHTML = bangundatar;
+        }
+        // 6. Metode unshift
+        var bangundatar = ["kubus","balok","persegi","lingkaran"];
+        document.getElementById("result").innerHTML = bangundatar;
+        function clik() {
+            bangundatar.unshift("Jajar Genjang");
+            document.getElementById("result").innerHTML = bangundatar;
+        }
+        
+        // 7. Metode splice
+        var benda = ["Tv","Mangkok","Balon","Tas"];
+        document.getElementById("result").innerHTML = benda;
+        function clik() {
+            benda.splice(0, 3, "Baju", "Sepatu");
+            document.getElementById("result").innerHTML = benda;
+        }
+        // 8. Metode splice Menghapus
+        var benda = ["Tv","Mangkok","Balon","Tas"];
+        document.getElementById("result").innerHTML = benda;
+        function clik() {
+            benda.splice(0,3 );
+            document.getElementById("result").innerHTML = benda;
+        }
+        // 9. Metode sort
+        var buah = ["Duku","Ceri","Belimbing","Appel"]
+        document.getElementById("result").innerHTML = buah; 
+        function clik() {
+            buah.sort();
+            document.getElementById("result").innerHTML = buah;
+        }
+        
+        // 10. Metode reverse
+        var buah = ["Duku","Ceri","Belimbing","Appel"]
+        document.getElementById("result").innerHTML = buah; 
+        function clik() {
+            buah.reverse();
+            document.getElementById("result").innerHTML = buah;
+        }
+    </script>
+    
+</body>
+</html>
