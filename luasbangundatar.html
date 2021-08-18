@@ -10,39 +10,44 @@
     <script>
         var pilih = prompt ("Persegi, Persegi Panjang, Segitiga, Jajar Genjang")
         if (pilih === "Persegi") {
-            var sisi1 = prompt("Masukan Sisi")
-            var sisi2 = prompt("Masukan Sisi")
-            var hasil = sisi1*sisi2
-            document.write("<b> Luas Persegi</b> <br>")
-            document.write("Sisi :", sisi1,"<br>")
-            document.write("Sisi :", sisi2,"<br>")
-            document.write("Hasil Menghitung  s x s: ",hasil)
+            //var sisi1 = prompt("Masukan Sisi")
+            //var sisi2 = prompt("Masukan Sisi")
+            //var hasil = sisi1*sisi2
+            //document.write("<b> Luas Persegi</b> <br>")
+            //document.write("Sisi :", sisi1,"<br>")
+            //document.write("Sisi :", sisi2,"<br>")
+            //document.write("Hasil Menghitung  s x s: ",hasil)
         }else if (pilih === "Persegi Panjang"){
-            var p = prompt("Masukan Panjang")
-            var l = prompt("Masukan Lebar")
-            var hasil = l*p
-            document.write("<b> Luas Persegi Panjang</b> <br>")
-            document.write("Panjang :", p,"<br>")
-            document.write("Lebar :", l,"<br>")
-            document.write("Hasil Menghitung p x l: ",hasil)
+            //var p = prompt("Masukan Panjang")
+            //var l = prompt("Masukan Lebar")
+            //var hasil = l*p
+            //document.write("<b> Luas Persegi Panjang</b> <br>")
+            //document.write("Panjang :", p,"<br>")
+            //document.write("Lebar :", l,"<br>")
+            //document.write("Hasil Menghitung p x l: ",hasil)
         }else if (pilih === "Segitiga"){
-            const y = 1/2
-            var a = prompt("Masukan Alas")
-            var t = prompt("Masukan Tinggi")
-            var hasil = y*a*t
-            document.write("<b> Luas Segitiga</b> <br>")
-            document.write("Alas :", a,"<br>")
-            document.write("Tinggi :", t,"<br>")
-            document.write("Hasil Menghitung a x t: ",hasil)
+            //const y = 1/2
+            //var a = prompt("Masukan Alas")
+            //var t = prompt("Masukan Tinggi")
+            //var hasil = y*a*t
+            //document.write("<b> Luas Segitiga</b> <br>")
+            //document.write("Alas :", a,"<br>")
+            //document.write("Tinggi :", t,"<br>")
+            //document.write("Hasil Menghitung a x t: ",hasil)
         }else if (pilih === "Jajar Genjang"){
-            var c = prompt("Masukan sisi Alas")
-            var d = prompt("Masukan sisi miring")
-            var hasil = c*d
-            document.write("<b> Luas Jajar Genjang</b> <br>")
-            document.write("sisi Alas :", c,"<br>")
-            document.write("sisi miring :", d,"<br>")
-            document.write("Hasil Menghitung c x d: ",hasil)
+            //var c = prompt("Masukan sisi Alas")
+            //var d = prompt("Masukan sisi miring")
+            //var hasil = c*d
+            //document.write("<b> Luas Jajar Genjang</b> <br>")
+            //document.write("sisi Alas :", c,"<br>")
+            //document.write("sisi miring :", d,"<br>")
+            //document.write("Hasil Menghitung c x d: ",hasil)
         }
+        function HitungLuasPersegi(a,t) {
+            var hasil = a*t/2;
+            return hasil
+        }
+        document.write(HitungLuasPersegi(160,2))
     </script>
 </body>
 </html>
