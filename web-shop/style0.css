@@ -1,0 +1,36 @@
+body {
+    margin-top: 50px;
+	padding: 0;
+}
+
+.jumbotron {
+    height: 550px;
+     background-image: url(https://images.pexels.com/photos/4914807/pexels-photo-4914807.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+     background-size: cover;
+     background-position: -21px;
+}
+h1,
+h3 {
+	font-weight: 500;
+	color: rgb(254, 254, 255);
+  }
+
+nav ul {
+	display: flex;
+	list-style: none;
+	width: 40%;
+	justify-content: space-between;
+}
+nav ul li a{
+	color: rgb(0, 0, 0);
+	text-decoration:none;
+	font-size: 1.2em;
+}
+
+nav ul li a:hover{
+	background-color: #00e431;
+}
+footer {
+    min-height: 50px;
+    padding-top:12px;
+}
